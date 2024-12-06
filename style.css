@@ -1,0 +1,35 @@
+body{
+    text-align: center;
+    font-family: Arial;
+    color: silver;
+    background-image: linear-gradient(to right,rgb(7, 121, 102),rgb(6, 116, 143));
+}
+
+input{
+    padding: 4px;
+    border-radius: 5px;
+}
+input:focus{
+    background-color: black;
+    color: white;
+}
+table{
+    display: flex;
+    justify-content: center;
+}
+td{
+    font-size: 25px;
+}
+#btngene{
+    width: 90px;
+    height: 30px;
+    color: white;
+    background-color: rgb(6, 116, 143);
+    border-radius: 10px;
+}
+#btngene:hover{
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.2);
+    background-color: rgb(7, 121, 102);
+}

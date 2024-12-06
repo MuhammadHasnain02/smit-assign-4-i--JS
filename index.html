@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <br>
+    Enter Any Table Name : <input type="number" id="tablename" placeholder="Enter Table Name"><br><br>
+    Enter Value Stop Table : <input type="number" id="tablecount" placeholder="Enter Count Table">
+    <br><br><br>
+
+    <button onclick="check()" id="btngene">Generate</button>
+    <br><br>
+    <h1 id="tablenameh2"></h1>
+
+<table id="container">
+</table>
+
+
+<script>
+
+function check(){
+    
+    let input1 = document.getElementById("tablename").value
+    let input2 = document.getElementById("tablecount").value
+    
+    document.getElementById("tablenameh2").innerText = "Table Of " + input1
+
+let tr = ""
+
+for(let i = 1 ; i <= input2 ; i++){
+    tr += `<tr> <td>${input1}</td> <td>x</td> <td>${i}</td> <td>=</td> <td>${input1*i}</td> </tr>`
+}
+    document.getElementById("container").innerHTML = tr
+}
+
+</script>
+
+</body>
+</html>
